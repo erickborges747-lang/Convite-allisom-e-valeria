@@ -1975,7 +1975,7 @@ FOLHAS DECORATIVAS
     justify-content: center;
     align-items: center;
 
-    overflow: auto;        /* caso o conteúdo fique maior que a tela */
+    overflow: hidden;        /* caso o conteúdo fique maior que a tela */
     padding: 20px;         /* espaço nas bordas */
 
     z-index: 9999;
