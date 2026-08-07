@@ -45,7 +45,7 @@ CONFIGURAÇÕES
 const CONFIG = {
 
     whatsapp:
-        "https://wa.me/5591984916451?text=Olá!%20Confirmo%20minha%20presença%20no%20casamento.",
+        "https://wa.me/5591984916451?text=Olá,%20Allisom%20e%20Valéria!%20Confirmo%20a%20presença%20de%20document.getElementById('nomesConvidados')%20no%20casamento.",
 
     cerimonia:
         "https://maps.app.goo.gl/Yx8ifeeAZajMZBrJ9",
