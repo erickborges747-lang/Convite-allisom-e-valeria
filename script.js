@@ -154,7 +154,7 @@ function abrirPix(){
 
             <h2>Presentear via Pix</h2>
 
-            <img src="">
+            <img src="img/Captura de tela 2026-03-23 115529.png">
 
             <p>
 
