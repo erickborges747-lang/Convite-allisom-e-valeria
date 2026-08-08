@@ -16,6 +16,8 @@ async function carregarConvite() {
 
         const convite = await resposta.json();
 
+        nomesConvidados = convite.nomes;
+
         document.getElementById("familiaConvidada").textContent =
             convite.familia;
 
@@ -60,6 +62,12 @@ const CONFIG = {
         "91984916451"
 };
 
+/*=================================================
+CONFIRMAÇÃO CONVIDADOS - BOTÃO WHATSAPP
+==================================================*/
+let nomesConvidados = [];
+
+
 /*==================================================
 ANIMAÇÃO AO ROLAR
 ==================================================*/
@@ -102,7 +110,15 @@ botoes[0].addEventListener("click",(e)=>{
 
     e.preventDefault();
 
-    window.open(CONFIG.whatsapp,"_blank");
+    const nomes = nomesConvidados.join(", ");
+
+    const mensagem =
+        `Olá, Allisom e Valéria! Confirmo a presença de ${nomes} no casamento.`;
+
+    const whatsapp =
+        `https://wa.me/5591984916451?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(whatsapp, "_blank");
 
 });
 
