@@ -59,7 +59,7 @@ const CONFIG = {
         "https://maps.app.goo.gl/riSQK96AtgipU7zU8",
 
     presentes:
-        "https://lista.com",
+        "presentes.html",
 
     pix:
         "08552579200"

@@ -1,0 +1,465 @@
+/* ======================================================
+PÁGINA DE PRESENTES
+====================================================== */
+
+:root {
+
+ --verde: #738862;
+ --verde-escuro: #536746;
+ --verde-claro: #e9eee5;
+ --fundo: #faf9f6;
+ --branco: #ffffff;
+ --texto: #4b4b45;
+ --texto-claro: #77776f;
+ --borda: #dfe5da;
+
+}
+
+/* ======================================================
+RESET
+====================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+
+
+background: var(--fundo);
+
+color: var(--texto);
+
+font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+line-height: 1.6;
+
+
+}
+
+/* ======================================================
+PÁGINA
+====================================================== */
+
+.pagina-presentes {
+
+
+width: 100%;
+
+max-width: 850px;
+
+margin: 0 auto;
+
+padding: 30px 20px 60px;
+
+
+}
+
+/* ======================================================
+CABEÇALHO
+====================================================== */
+
+.cabecalho-presentes {
+
+
+text-align: center;
+
+padding:
+
+    45px
+    20px
+    35px;
+
+}
+
+.detalhe {
+
+
+display: block;
+
+color: var(--verde);
+
+font-size: 32px;
+
+margin-bottom: 8px;
+
+
+}
+
+.pequeno-titulo {
+
+
+color: var(--verde);
+
+font-family:
+    Arial,
+    sans-serif;
+
+font-size: 11px;
+
+letter-spacing: 3px;
+
+font-weight: 600;
+
+margin-bottom: 10px;
+
+
+}
+
+.cabecalho-presentes h1 {
+
+
+color: var(--verde-escuro);
+
+font-size: clamp(32px, 7vw, 48px);
+
+font-weight: 400;
+
+line-height: 1.15;
+
+
+}
+
+.linha-decorativa {
+
+
+width: 55px;
+
+height: 1px;
+
+background: var(--verde);
+
+margin: 20px auto;
+
+
+}
+
+.mensagem {
+
+
+max-width: 600px;
+
+margin: 0 auto;
+
+color: var(--texto-claro);
+
+font-size: 16px;
+
+line-height: 1.8;
+
+
+}
+
+/* ======================================================
+CATEGORIAS
+====================================================== */
+
+.categoria {
+
+
+background: var(--branco);
+
+border:
+
+    1px solid
+    var(--borda);
+
+border-radius: 14px;
+
+padding: 28px 30px;
+
+margin-bottom: 20px;
+
+box-shadow:
+
+    0 5px 20px
+    rgba(80, 90, 70, 0.05);
+
+
+}
+
+/* ======================================================
+TÍTULO DA CATEGORIA
+====================================================== */
+
+.categoria h2 {
+
+
+color: var(--verde-escuro);
+
+font-size: 24px;
+
+font-weight: 400;
+
+margin-bottom: 20px;
+
+padding-bottom: 12px;
+
+border-bottom:
+
+    1px solid
+    var(--borda);
+
+
+}
+
+/* ======================================================
+LISTA
+====================================================== */
+
+.categoria ul {
+
+
+list-style: none;
+
+display: grid;
+
+grid-template-columns:
+    repeat(2, 1fr);
+
+column-gap: 35px;
+
+
+}
+
+.categoria li {
+
+
+position: relative;
+
+padding:
+
+    7px
+    0
+    7px
+    20px;
+
+color: var(--texto);
+
+font-size: 15px;
+
+
+}
+
+.categoria li::before {
+
+
+content: "♡";
+
+position: absolute;
+
+left: 0;
+
+top: 7px;
+
+color: var(--verde);
+
+font-size: 13px;
+
+
+}
+
+/* ======================================================
+OBSERVAÇÕES
+====================================================== */
+
+.observacao {
+
+
+margin-top: 18px;
+
+padding-top: 15px;
+
+border-top:
+
+    1px solid
+    var(--borda);
+
+color: var(--texto-claro);
+
+font-size: 13px;
+
+font-style: italic;
+
+
+}
+
+/* ======================================================
+RODAPÉ
+====================================================== */
+
+.final-presentes {
+
+
+text-align: center;
+
+padding:
+
+    35px
+    20px
+    20px;
+
+color: var(--texto-claro);
+
+
+}
+
+.final-presentes .linha-decorativa {
+
+
+margin-bottom: 25px;
+
+
+}
+
+.final-presentes p {
+
+
+max-width: 500px;
+
+margin: 0 auto 15px;
+
+font-size: 15px;
+
+line-height: 1.8;
+
+
+}
+
+.coracao {
+
+
+display: block;
+
+color: var(--verde);
+
+font-size: 28px;
+
+margin-bottom: 8px;
+
+
+}
+
+.final-presentes strong {
+
+
+color: var(--verde-escuro);
+
+font-size: 18px;
+
+font-weight: 400;
+
+}
+
+/* ======================================================
+CELULAR
+====================================================== */
+
+@media (max-width: 600px) {
+
+.pagina-presentes {
+
+    padding:
+
+        15px
+        12px
+        45px;
+
+}
+
+
+.cabecalho-presentes {
+
+    padding:
+
+        35px
+        12px
+        30px;
+
+}
+
+
+.cabecalho-presentes h1 {
+
+    font-size: 34px;
+
+}
+
+
+.mensagem {
+
+    font-size: 15px;
+
+}
+
+
+.categoria {
+
+    padding:
+
+        22px
+        20px;
+
+    border-radius: 12px;
+
+}
+
+
+.categoria h2 {
+
+    font-size: 21px;
+
+}
+
+
+.categoria ul {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+.categoria li {
+
+    font-size: 15px;
+
+    padding-top: 6px;
+
+    padding-bottom: 6px;
+
+}
+
+}
+
+/* ======================================================
+TELAS MUITO PEQUENAS
+====================================================== */
+
+@media (max-width: 360px) {
+
+.cabecalho-presentes h1 {
+
+    font-size: 30px;
+
+}
+
+
+.categoria {
+
+    padding:
+
+        20px
+        16px;
+
+}
+
+}
