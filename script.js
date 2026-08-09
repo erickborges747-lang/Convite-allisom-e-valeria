@@ -140,7 +140,7 @@ botoes[0].addEventListener("click", async (e) => {
     }
 
     const mensagem =
-        `Olá! Confirmo a presença de ${nomes} no casamento.`;
+        `Olá! Confirmo a presença de ${nomes} no casamento de Allisom e Valéria.`;
 
     const whatsapp =
         `https://wa.me/5591999891079?text=${encodeURIComponent(mensagem)}`;
