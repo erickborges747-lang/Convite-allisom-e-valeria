@@ -1,3 +1,4 @@
+let conviteAtual = null;
 async function carregarConvite() {
 
     const parametros = new URLSearchParams(window.location.search);
@@ -15,6 +16,8 @@ async function carregarConvite() {
         }
 
         const convite = await resposta.json();
+
+        conviteAtual = convite;
 
         nomesConvidados = convite.nomes;
 
@@ -59,7 +62,7 @@ const CONFIG = {
         "https://lista.com",
 
     pix:
-        "91984916451"
+        "08552579200"
 };
 
 /*=================================================
@@ -106,17 +109,41 @@ BOTÕES
 
 const botoes = document.querySelectorAll(".buttons a");
 
-botoes[0].addEventListener("click",(e)=>{
+botoes[0].addEventListener("click", async (e) => {
 
     e.preventDefault();
 
+    const parametros = new URLSearchParams(window.location.search);
+
+    const id = parametros.get("id");
+
     const nomes = nomesConvidados.join(", ");
 
+    try {
+
+        await fetch(
+            "https://script.google.com/macros/s/AKfycbx-7ltj3O6ImsJboOaLNiLfc6wKIO6qr0FaZKzdCZdbMDn6wC_QsJyMXnL5VftRtLyjfw/exec",
+            {
+                method: "POST",
+
+                body: JSON.stringify({
+                    id: id,
+                    nomes: conviteAtual.nomes.join(", ")
+                })
+            }
+        );
+
+    } catch (erro) {
+
+        console.error("Erro ao registrar confirmação:", erro);
+
+    }
+
     const mensagem =
-        `Olá, Allisom e Valéria! Confirmo a presença de ${nomes} no casamento.`;
+        `Olá! Confirmo a presença de ${nomes} no casamento.`;
 
     const whatsapp =
-        `https://wa.me/5591984916451?text=${encodeURIComponent(mensagem)}`;
+        `https://wa.me/5591999891079?text=${encodeURIComponent(mensagem)}`;
 
     window.open(whatsapp, "_blank");
 
@@ -170,7 +197,7 @@ function abrirPix(){
 
             <h2>Presentear via Pix</h2>
 
-            <img src="img/Captura de tela 2026-03-23 115529.png">
+            <img class="pix-img" src="img/image-pix.jpeg" alt="QR Code Pix">
 
             <p>
 
