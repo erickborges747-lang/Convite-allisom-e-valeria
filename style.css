@@ -2061,15 +2061,15 @@ RODAPÉ
 .final-presentes {
 
 
-text-align: center;
+    text-align: center;
 
-padding:
+    padding:
 
     35px
     20px
     20px;
 
-color: var(--texto);
+    color: var(--texto);
 
 
 }
@@ -2077,7 +2077,7 @@ color: var(--texto);
 .final-presentes .linha-decorativa {
 
 
-margin-bottom: 25px;
+    margin-bottom: 25px;
 
 
 }
@@ -2100,13 +2100,13 @@ margin-bottom: 25px;
 .coracao {
 
 
-display: block;
+    display: block;
 
-color: var(--verde);
+    color: var(--verde);
 
-font-size: 28px;
+    font-size: 28px;
 
-margin-bottom: 8px;
+    margin-bottom: 8px;
 
 
 }
@@ -2114,10 +2114,10 @@ margin-bottom: 8px;
 .final-presentes strong {
 
 
-color: var(--verdeEscuro);
+    color: var(--verdeEscuro);
 
-font-size: 18px;
+    font-size: 18px;
 
-font-weight: 400;
+    font-weight: 400;
 
 }
