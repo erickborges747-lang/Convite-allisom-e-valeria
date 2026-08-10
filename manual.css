@@ -1,0 +1,493 @@
+/* ======================================================
+   MANUAL DO CONVIDADO
+====================================================== */
+
+:root {
+
+    --verde: #738862;
+    --verde-escuro: #536746;
+    --verde-claro: #e9eee5;
+
+    --fundo: #faf9f6;
+    --branco: #ffffff;
+
+    --texto: #4b4b45;
+    --texto-claro: #77776f;
+
+    --borda: #dfe5da;
+
+}
+
+
+/* ======================================================
+   RESET
+====================================================== */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    background: var(--fundo);
+
+    color: var(--texto);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    line-height: 1.6;
+
+}
+
+
+/* ======================================================
+   PÁGINA
+====================================================== */
+
+.manual {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding:
+        25px
+        18px
+        60px;
+
+}
+
+
+/* ======================================================
+   CABEÇALHO
+====================================================== */
+
+.manual-header {
+
+    text-align: center;
+
+    padding:
+        45px
+        20px
+        35px;
+
+}
+
+
+.ornamento {
+
+    color: var(--verde);
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.subtitulo {
+
+    color: var(--verde);
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.manual-header h1 {
+
+    color: var(--verde-escuro);
+
+    font-size:
+        clamp(38px, 8vw, 58px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+}
+
+
+.manual-header h1 span {
+
+    font-style: italic;
+
+}
+
+
+.linha {
+
+    width: 55px;
+
+    height: 1px;
+
+    background: var(--verde);
+
+    margin:
+        22px
+        auto;
+
+}
+
+
+.introducao {
+
+    max-width: 570px;
+
+    margin: 0 auto;
+
+    color: var(--texto-claro);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ======================================================
+   ORIENTAÇÕES
+====================================================== */
+
+.orientacoes {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+
+/* ======================================================
+   CARTÃO
+====================================================== */
+
+.orientacao {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding:
+        22px
+        24px;
+
+    background: var(--branco);
+
+    border:
+        1px solid
+        var(--borda);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(80, 90, 70, 0.045);
+
+}
+
+
+/* ======================================================
+   ÍCONE
+====================================================== */
+
+.icone {
+
+    flex-shrink: 0;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid
+        var(--verde);
+
+    border-radius: 50%;
+
+    color: var(--verde);
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 21px;
+
+}
+
+
+/* ======================================================
+   TEXTO
+====================================================== */
+
+.texto {
+
+    flex: 1;
+
+}
+
+
+.texto h2 {
+
+    color: var(--verde-escuro);
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    margin-bottom: 5px;
+
+}
+
+
+.texto p {
+
+    color: var(--texto-claro);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ======================================================
+   DESTAQUE
+====================================================== */
+
+.orientacao.destaque {
+
+    background:
+        var(--verde-claro);
+
+    border-color:
+        #d2dccb;
+
+}
+
+
+.orientacao.destaque .texto h2 {
+
+    color: var(--verde-escuro);
+
+}
+
+
+/* ======================================================
+   RODAPÉ
+====================================================== */
+
+.manual-footer {
+
+    text-align: center;
+
+    padding:
+        40px
+        20px
+        10px;
+
+}
+
+
+.manual-footer .linha {
+
+    margin-bottom: 25px;
+
+}
+
+
+.coracao {
+
+    color: var(--verde);
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.manual-footer p {
+
+    max-width: 450px;
+
+    margin:
+        0 auto
+        12px;
+
+    color: var(--texto-claro);
+
+    font-size: 14px;
+
+}
+
+
+.manual-footer h3 {
+
+    color: var(--verde-escuro);
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    font-style: italic;
+
+}
+
+
+/* ======================================================
+   CELULAR
+====================================================== */
+
+@media (max-width: 600px) {
+
+    .manual {
+
+        padding:
+            10px
+            12px
+            45px;
+
+    }
+
+
+    .manual-header {
+
+        padding:
+            35px
+            10px
+            30px;
+
+    }
+
+
+    .manual-header h1 {
+
+        font-size: 39px;
+
+    }
+
+
+    .introducao {
+
+        font-size: 14px;
+
+    }
+
+
+    .orientacao {
+
+        gap: 15px;
+
+        padding:
+            19px
+            17px;
+
+        border-radius: 12px;
+
+    }
+
+
+    .icone {
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 18px;
+
+    }
+
+
+    .texto h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .texto p {
+
+        font-size: 13.5px;
+
+    }
+
+}
+
+
+/* ======================================================
+   CELULARES PEQUENOS
+====================================================== */
+
+@media (max-width: 360px) {
+
+    .manual-header h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .orientacao {
+
+        gap: 12px;
+
+        padding:
+            17px
+            14px;
+
+    }
+
+
+    .icone {
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 16px;
+
+    }
+
+
+    .texto h2 {
+
+        font-size: 17px;
+
+    }
+
+}

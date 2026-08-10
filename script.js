@@ -62,7 +62,10 @@ const CONFIG = {
         "presentes.html",
 
     pix:
-        "08552579200"
+        "08552579200",
+
+    manual:
+        "manual.html"
 };
 
 /*=================================================
@@ -180,6 +183,15 @@ botoes[4].addEventListener("click",(e)=>{
     abrirPix();
 
 });
+
+botoes[5].addEventListener("click",(e)=>{
+
+    e.preventDefault();
+
+    window.open(CONFIG.manual,"_blank");
+
+});
+
 
 /*==================================================
 MODAL PIX
