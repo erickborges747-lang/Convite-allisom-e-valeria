@@ -1409,7 +1409,7 @@ AVISO
 FOOTER
 ======================================= */
 
-footer{
+/*=============footer{
 
     position:relative;
 
@@ -1425,7 +1425,7 @@ footer::before{
 
     margin-bottom:15px;
 
-}
+}==================*/
 
 /* =======================================
 ANIMAÇÕES
@@ -2051,5 +2051,73 @@ FOLHAS DECORATIVAS
 .modal-box button:hover{
 
     background:var(--verdeEscuro);
+
+}
+
+/* ======================================================
+RODAPÉ
+====================================================== */
+
+.final-presentes {
+
+
+text-align: center;
+
+padding:
+
+    35px
+    20px
+    20px;
+
+color: var(--texto);
+
+
+}
+
+.final-presentes .linha-decorativa {
+
+
+margin-bottom: 25px;
+
+
+}
+
+.final-presentes p {
+
+
+    max-width: 500px;
+
+    margin: 0 auto 15px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+    
+    color: var(--verdeEscuro);
+
+}
+
+.coracao {
+
+
+display: block;
+
+color: var(--verde);
+
+font-size: 28px;
+
+margin-bottom: 8px;
+
+
+}
+
+.final-presentes strong {
+
+
+color: var(--verdeEscuro);
+
+font-size: 18px;
+
+font-weight: 400;
 
 }
