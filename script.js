@@ -24,10 +24,31 @@ async function carregarConvite() {
         document.getElementById("familiaConvidada").textContent =
             convite.familia;
 
-        document.getElementById("nomesConvidados").innerHTML =
-            convite.nomes
-                .map(nome => `<p>${nome}</p>`)
-                .join("");
+        const nomesValidos = convite.nomes.filter(nome => nome.trim() !== "");
+
+let nomesFormatados = "";
+
+if (nomesValidos.length === 1) {
+
+    nomesFormatados = nomesValidos[0];
+
+} else if (nomesValidos.length === 2) {
+
+    nomesFormatados =
+        `${nomesValidos[0]} e ${nomesValidos[1]}`;
+
+} else {
+
+    nomesFormatados =
+        nomesValidos.slice(0, -1).join(", ") +
+        " e " +
+        nomesValidos[nomesValidos.length - 1];
+
+}
+
+document.getElementById("nomesConvidados").innerHTML =
+
+    `<p>${nomesFormatados}</p>`;
 
     } catch (erro) {
 
@@ -125,7 +146,7 @@ botoes[0].addEventListener("click", async (e) => {
     try {
 
         await fetch(
-            "https://script.google.com/macros/s/AKfycbx-7ltj3O6ImsJboOaLNiLfc6wKIO6qr0FaZKzdCZdbMDn6wC_QsJyMXnL5VftRtLyjfw/exec",
+            "https://script.google.com/macros/s/AKfycby4zbOXQ1aw1si_ht-agtnQ_xA__XWC-byPOvAXhInTUEepKI8w8wQAlWF_dcf0nhsV_A/exec",
             {
                 method: "POST",
 
